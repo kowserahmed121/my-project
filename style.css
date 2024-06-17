@@ -1,0 +1,83 @@
+.mohter{
+    width: 600px;
+    height: 300px;
+    margin: 150px auto;
+    border: 5px solid rgb(252, 0, 231);
+    box-shadow: 3px 3px 5px rgb(252, 0, 231);
+    position: relative;
+    animation: fast-Animation 4s infinite linear;
+
+}
+
+.mother-child{
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: rgb(252, 0, 231);
+    animation: last-Animation 4s infinite linear;
+}
+
+@keyframes fast-Animation {
+    0%{
+        border: 5px solid rgb(252, 0, 231);
+        box-shadow: 3px 3px 5px rgb(252, 0, 231);    
+    }
+    
+    25%{
+        border: 5px solid rgb(252, 248, 0);
+        box-shadow: 3px 3px 5px rgb(252, 248, 0); 
+    }
+
+    50%{
+        border: 5px solid rgb(94, 86, 93);
+        box-shadow: 3px 3px 5px rgb(94, 86, 93);
+    }
+
+    75%{
+        border: 5px solid rgb(0, 255, 5);
+        box-shadow: 3px 3px 5px rgb(0, 255, 5); 
+    }
+    
+    100%{
+        border: 5px solid rgb(226, 12, 12);
+        box-shadow: 3px 3px 5px rgb(226, 12, 12); 
+    }
+}
+
+@keyframes last-Animation {
+    0%{
+        background-color:rgb(252, 0, 231); ;
+        top: 0;
+        left: 0;
+    }
+    
+    25%{
+        background-color: rgb(252, 248, 0);
+        top: 100px;
+        height: 200px;
+        width: 200px;
+    }
+
+    50%{
+        background-color: rgb(94, 86, 93);
+        top: 0px;
+        height: 100px;
+        width: 100px;
+    }
+
+    75%{
+        background-color: rgb(0, 255, 5);
+        top: 255px;
+        left: 555px;
+        width: 50px;
+        height: 50px;
+    }
+    
+    100%{
+        background-color: rgb(226, 12, 12);
+        top: 0;
+        left: 0;
+    }
+}
+
